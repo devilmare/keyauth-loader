@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\thirdparty\auth\auth.cpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\auth\hmac_sha256.c">
+      <Filter>thirdparty\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\auth\sha256.c">
+      <Filter>thirdparty\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\auth\utils.cpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\discord\Discord.cpp">
+      <Filter>thirdparty\discord</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\security\Analysis\FindProcess.cpp">
+      <Filter>thirdparty\security\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\security\Analysis\FindWindow.cpp">
+      <Filter>thirdparty\security\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\security\Shared\Shared.cpp">
+      <Filter>thirdparty\security\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{477f4529-d5f8-4f0d-acb9-e557ae4704c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\curl">
+      <UniqueIdentifier>{99bbb4cb-8c20-4339-a777-c9492cfcf429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann">
+      <UniqueIdentifier>{b8c26f13-4261-4069-9a3b-9e43087e66f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty">
+      <UniqueIdentifier>{099d921b-a3a2-4a27-9f2d-cb9dea0a486b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\hedley">
+      <UniqueIdentifier>{6ec7e160-7214-47b0-b41d-ccb792d35050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\detail">
+      <UniqueIdentifier>{763a76a6-ce0b-4fa9-8225-fe7589beea8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\detail\conversions">
+      <UniqueIdentifier>{533d234a-dd09-462f-b9ee-2ed6ea2f2395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\detail\input">
+      <UniqueIdentifier>{1758fb8e-fdcf-45e9-8733-f785c1fb2acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\detail\iterators">
+      <UniqueIdentifier>{662f0378-e108-46b0-87cb-dabe102889e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\detail\meta">
+      <UniqueIdentifier>{b1b46ae4-0583-44a9-9429-e3f624a0d682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\nlohmann\thirdparty\detail\output">
+      <UniqueIdentifier>{023c5e55-14fc-4a84-a050-a69edac34891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\auth">
+      <UniqueIdentifier>{7f847332-0377-4ec7-9080-e7b0025fddba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shareds">
+      <UniqueIdentifier>{f9a0568f-4bb3-43f6-b11f-1843953185b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\discord">
+      <UniqueIdentifier>{d64ca777-8efb-41e9-a898-f0e863592893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\security">
+      <UniqueIdentifier>{556d9e51-ffbd-49de-85d4-5b24912515cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\security\Analysis">
+      <UniqueIdentifier>{1aa385e6-add1-4a13-888f-fbda0f6303db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\security\Shared">
+      <UniqueIdentifier>{7e16836a-641f-41bc-9c54-35091977e920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{9e634f42-ad4d-4cbd-a9df-cafe4921a78e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\curl\curl.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\curlver.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\easy.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\mprintf.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\multi.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\stdcheaders.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\system.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\typecheck-gcc.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\curl\urlapi.h">
+      <Filter>thirdparty\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\adl_serializer.hpp">
+      <Filter>thirdparty\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\byte_container_with_subtype.hpp">
+      <Filter>thirdparty\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\json.hpp">
+      <Filter>thirdparty\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\json_fwd.hpp">
+      <Filter>thirdparty\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\ordered_map.hpp">
+      <Filter>thirdparty\nlohmann</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\thirdparty\hedley\hedley.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\hedley</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\thirdparty\hedley\hedley_undef.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\hedley</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\exceptions.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\hash.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\json_pointer.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\json_ref.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\macro_scope.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\macro_unscope.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\value_t.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\conversions\from_json.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\conversions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\conversions\to_chars.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\conversions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\conversions\to_json.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\conversions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\binary_reader.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\input_adapters.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\json_sax.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\lexer.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\parser.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\position_t.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\internal_iterator.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\iterators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\iter_impl.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\iterators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\iteration_proxy.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\iterators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\iterator_traits.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\iterators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\json_reverse_iterator.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\iterators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\primitive_iterator.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\iterators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\cpp_future.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\detected.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\is_sax.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\type_traits.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\void_t.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\output\binary_writer.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\output\output_adapters.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\nlohmann\detail\output\serializer.hpp">
+      <Filter>thirdparty\nlohmann\thirdparty\detail\output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\auth.hpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\hmac_sha256.h">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\includes.hpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\integrity.h">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\Security.hpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\sha256.h">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\utils.hpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\auth\xorstr.hpp">
+      <Filter>thirdparty\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="Shareds\Utils.hpp">
+      <Filter>Shareds</Filter>
+    </ClInclude>
+    <ClInclude Include="Shareds\XorStr.hpp">
+      <Filter>Shareds</Filter>
+    </ClInclude>
+    <ClInclude Include="Shareds\Console.hpp">
+      <Filter>Shareds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\discord\Discord.hpp">
+      <Filter>thirdparty\discord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\security\Analysis\FindProcess.hpp">
+      <Filter>thirdparty\security\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\security\Shared\Shared.hpp">
+      <Filter>thirdparty\security\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="..\thirdparty\security\Analysis\FindWindow.hpp">
+      <Filter>thirdparty\security\Analysis</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\thirdparty\curl\libcurl.lib">
+      <Filter>thirdparty\curl</Filter>
+    </Library>
+    <Library Include="..\thirdparty\curl\libcurl86.lib">
+      <Filter>thirdparty\curl</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\thirdparty\curl\Makefile.am">
+      <Filter>thirdparty\curl</Filter>
+    </None>
+    <None Include="..\thirdparty\curl\Makefile.in">
+      <Filter>thirdparty\curl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

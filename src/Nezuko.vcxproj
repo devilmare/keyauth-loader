@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4b1c44ac-e29d-40d5-87f2-9eada51b091a}</ProjectGuid>
+    <RootNamespace>Nezuko</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin</OutDir>
+    <IntDir>..\bin\obj</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;CURL_STATICLIB;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>..\thirdparty\curl;..\thirdparty\nlohmann;..\thirdparty\auth;..\thirdparty\discord;..\thirdparty\security;..\src;..\src\Config;..\src\Shareds;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>libcurl.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\thirdparty\auth\auth.cpp" />
+    <ClCompile Include="..\thirdparty\auth\hmac_sha256.c" />
+    <ClCompile Include="..\thirdparty\auth\sha256.c" />
+    <ClCompile Include="..\thirdparty\auth\utils.cpp" />
+    <ClCompile Include="..\thirdparty\discord\Discord.cpp" />
+    <ClCompile Include="..\thirdparty\security\Analysis\FindProcess.cpp" />
+    <ClCompile Include="..\thirdparty\security\Analysis\FindWindow.cpp" />
+    <ClCompile Include="..\thirdparty\security\Shared\Shared.cpp" />
+    <ClCompile Include="Config\Config.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\auth\auth.hpp" />
+    <ClInclude Include="..\thirdparty\auth\hmac_sha256.h" />
+    <ClInclude Include="..\thirdparty\auth\includes.hpp" />
+    <ClInclude Include="..\thirdparty\auth\integrity.h" />
+    <ClInclude Include="..\thirdparty\auth\Security.hpp" />
+    <ClInclude Include="..\thirdparty\auth\sha256.h" />
+    <ClInclude Include="..\thirdparty\auth\utils.hpp" />
+    <ClInclude Include="..\thirdparty\auth\xorstr.hpp" />
+    <ClInclude Include="..\thirdparty\curl\curl.h" />
+    <ClInclude Include="..\thirdparty\curl\curlver.h" />
+    <ClInclude Include="..\thirdparty\curl\easy.h" />
+    <ClInclude Include="..\thirdparty\curl\mprintf.h" />
+    <ClInclude Include="..\thirdparty\curl\multi.h" />
+    <ClInclude Include="..\thirdparty\curl\stdcheaders.h" />
+    <ClInclude Include="..\thirdparty\curl\system.h" />
+    <ClInclude Include="..\thirdparty\curl\typecheck-gcc.h" />
+    <ClInclude Include="..\thirdparty\curl\urlapi.h" />
+    <ClInclude Include="..\thirdparty\discord\Discord.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\adl_serializer.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\byte_container_with_subtype.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\conversions\from_json.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\conversions\to_chars.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\conversions\to_json.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\exceptions.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\hash.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\binary_reader.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\input_adapters.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\json_sax.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\lexer.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\parser.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\input\position_t.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\internal_iterator.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\iteration_proxy.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\iterator_traits.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\iter_impl.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\json_reverse_iterator.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\iterators\primitive_iterator.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\json_pointer.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\json_ref.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\macro_scope.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\macro_unscope.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\cpp_future.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\detected.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\is_sax.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\type_traits.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\meta\void_t.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\output\binary_writer.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\output\output_adapters.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\output\serializer.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\detail\value_t.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\json.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\ordered_map.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\thirdparty\hedley\hedley.hpp" />
+    <ClInclude Include="..\thirdparty\nlohmann\thirdparty\hedley\hedley_undef.hpp" />
+    <ClInclude Include="..\thirdparty\security\Analysis\FindProcess.hpp" />
+    <ClInclude Include="..\thirdparty\security\Analysis\FindWindow.hpp" />
+    <ClInclude Include="..\thirdparty\security\Shared\Shared.hpp" />
+    <ClInclude Include="Config\Config.hpp" />
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="Shareds\Console.hpp" />
+    <ClInclude Include="Shareds\Utils.hpp" />
+    <ClInclude Include="Shareds\XorStr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\thirdparty\curl\libcurl.lib" />
+    <Library Include="..\thirdparty\curl\libcurl86.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\thirdparty\curl\Makefile.am" />
+    <None Include="..\thirdparty\curl\Makefile.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

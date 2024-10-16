@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nezuko", "Nezuko.vcxproj", "{4B1C44AC-E29D-40D5-87F2-9EADA51B091A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B1C44AC-E29D-40D5-87F2-9EADA51B091A}.Release|x86.ActiveCfg = Release|Win32
+		{4B1C44AC-E29D-40D5-87F2-9EADA51B091A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDDCCC6D-B006-43AB-A453-ADB4540048C3}
+	EndGlobalSection
+EndGlobal
