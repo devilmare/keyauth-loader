@@ -5,6 +5,7 @@ This is just a simple project done using KeyAuth.cc just for learning.
 If you are someone interested in the field of software development, this will also be useful for you to learn how to create your own loader
 
 # Add-ons
+- Support x86 win
 - Keyauth.cc library
 - Discord Webhook (Embed Message)
 - Console Style
